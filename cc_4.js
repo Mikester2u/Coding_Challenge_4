@@ -26,4 +26,9 @@ class EV extends Car {
         this.charge = chargeTo;
     }
 
+    accelerate () {
+        this.speed += 20;
+        this.charge -= 1;
+        console.log(this.make + "going at 140 km/h, with a charge of " + this.charge);
+    }
 }
