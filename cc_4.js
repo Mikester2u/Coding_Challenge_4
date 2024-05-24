@@ -21,9 +21,9 @@ class EV extends Car {
         super(make, speed);
         this.charge = charge;
     }
-}
 
-EV.prototype.chargeBattery = function(chargeTo) {
-    console.log("Battery charged to " + this.charge);
-    
+    chargeBattery(chargeTo) {
+        this.charge = chargeTo;
+    }
+
 }
